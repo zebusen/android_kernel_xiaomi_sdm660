@@ -13,7 +13,7 @@ jobs:
            git config --global user.email "zebusensei@gmail.com"
            git clone --depth=1 --quiet https://github.com/zebusen/android_kernel_xiaomi_sdm660 -b 11-HMP
            git clone --depth=1 --quiet https://github.com/zebusen/myscript.git -b main
-           script -c "bash -x myscript/compile.sh"
+           script -c "bash -x myscript/build.sh"
 workflows:
   version: 2.1
   cooking:

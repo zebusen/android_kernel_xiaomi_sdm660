@@ -8,7 +8,7 @@ jobs:
       - run:
           no_output_timeout: 50m
           command: |
-           apt update && apt upgrade && apt install nano bc bison ca-certificates curl flex gcc git libc6-dev libssl-dev openssl python ssh wget zip zstd sudo make clang gcc-arm-linux-gnueabi software-properties-common
+           apt-get -y update && apt-get -y upgrade && apt-get -y install nano bc bison ca-certificates curl flex gcc git libc6-dev libssl-dev openssl python ssh wget zip zstd sudo make clang gcc-arm-linux-gnueabi software-properties-common
            git config --global user.name "zebusen"
            git config --global user.email "zebusensei@gmail.com"
            git clone --depth=1 --quiet https://github.com/zebusen/myscript.git -b main
